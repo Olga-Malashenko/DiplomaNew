@@ -13,7 +13,7 @@
 
 
 <body>
-    <header class="header">
+    <header class="header"> <!--   Header ------------------------------------------------------------------------->
 
         <!-- Сверстать гамбургер -->
            
@@ -24,75 +24,220 @@
         
     </header>
 
-    <main class="main">  <!-- Рассмотреть, где ссылки, переверстать, и не забыть про hover -->
+    <main class="main">  <!-- Main -------------------------------------------------------------------------------
+         Рассмотреть, где ссылки, переверстать, и не забыть про hover -->
 
-        <section class="trends">
+        <section class="trends"> <!--   Секция ТРЕНДЫ------------------------>
 
             <h2 class="trends-title">Сейчас в тренде</h2>
 
             <article class="trend-banner windowsill-garden"> <!-- 1 -->
                 <div class="trend-banner-box">
-                    <span class="trend-banner-cathegory first cathegory">Lifestyle</span> <!--  Убрать span, перейти к списку ul-->
-                    <span class="trend-banner-cathegory">Interior</span>
-                    <h4 class="trend-banner-title"><a href="#" class="link">Сейчас в тренде: сад <!--  Вспомнить/подумать, где прописывается класс 
-                        во вложенности и как убрать ситли по умолчанию для ссылки-->
-                        на подоконнике</a></h4>
+                    <ul class="cathegory-list">
+                        <li class="cathegory-item">
+                            <a href="#" class="link cathegory-link">Lifestyle</a>
+                        </li> 
+                        <li class="cathegory-item">
+                            <a href="#" class="link cathegory-link">Interior</a>
+                        </li>
+                    </ul>
+                    <h3 class="trend-banner-title">
+                        <a href="#" class="link trend-banner-title-link">Сейчас в тренде: сад на подоконнике</a>
+                    </h3>
                 </div>
             </article>
 
             <article class="trend-banner cheeses"> <!-- 2 -->
                 <div class="trend-banner-box">
-                    <span class="trend-banner-cathegory first cathegory">Food</span>
-                    
-                    <h4 class="trend-banner-title">сыры на красивых картинках
-                        из интернета: какие они на
-                        вкус?</h4>
+                    <ul class="cathegory-list">
+                        <li class="cathegory-item">
+                            <a href="#" class="link cathegory-link">Food</a>
+                        </li> 
+                    </ul>
+                    <h3 class="trend-banner-title">
+                        <a href="#" class="link trend-banner-title-link">Сыры на красивых картинках
+                            из интернета: какие они на вкус?</a>
+                    </h3>
                 </div>
             </article>
 
             <article class="trend-banner mountains-hiking"> <!-- 3 -->
                 <div class="trend-banner-box">
-                    <span class="trend-banner-cathegory first cathegory">Lifestyle</span>
-                    <span class="trend-banner-cathegory">Travel</span>
-                    <h4 class="trend-banner-title">Собираемся в первый поход в горы</h4>
+                    <ul class="cathegory-list">
+                        <li class="cathegory-item">
+                            <a href="#" class="link cathegory-link">Lifestyle</a>
+                        </li> 
+                        <li class="cathegory-item">
+                            <a href="#" class="link cathegory-link">Travel</a>
+                        </li>
+                    </ul>
+                    <h3 class="trend-banner-title">
+                        <a href="#" class="link trend-banner-title-link">Собираемся в первый поход в горы</a>
+                    </h3>
                 </div>
             </article>
 
             <article class="trend-banner vitaminC"> <!-- 4 -->
                 <div class="trend-banner-box">
-                    <span class="trend-banner-cathegory first cathegory">Food</span>
-                    <span class="trend-banner-cathegory">Health</span>
-                    <h4 class="trend-banner-title">Сейчас в тренде: сколько витамина С в лимонах?</h4>
+                    <ul class="cathegory-list">
+                        <li class="cathegory-item">
+                            <a href="#" class="link cathegory-link">Food</a>
+                        </li> 
+                        <li class="cathegory-item">
+                            <a href="#" class="link cathegory-link">Health</a>
+                        </li>
+                    </ul>
+                    <h3 class="trend-banner-title">
+                        <a href="#" class="link trend-banner-title-link">Сейчас в тренде: сколько витамина С в лимонах?</a>
+                    </h3>
                 </div>
             </article>
         </section>
 
-        <section class="articles">
-            <div></div> <!--5 статей-->
-        </section>
+        <section class="articles"> <!--    сЕКЦИЯ сТАТЬИ ------------------------>
+
+            <article class="article"> <!-- 1 из 5-->
+                <img src="images/last-post1.jpg" alt="описание" class="article-image">
+                <ul class="cathegory-list">
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Travel</a>
+                    </li>
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Health</a>
+                    </li>
+                </ul>
+                <h3 class="article-title">
+                    <a href="#" class="link">10 мест, ради которых стоит
+                        проснуться на рассвете</a>
+                </h3>
+                <div class="article-meta">
+                    <span class="data">10 июня 2019</span>
+                    <span class="author">Неизвестный автор</span>
+                </div>
+                <p class="text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,
+                     запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
+            </article> 
+
+            <article class="article">  <!-- 2-->
+                <img src="images/last-post2.jpg" alt="описание" class="article-image">
+                <ul class="cathegory-list">
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Health</a>
+                    </li>
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Lifestyle</a>
+                    </li>
+                </ul>
+                <h3 class="article-title">
+                    <a href="#" class="link">ЙОга для начинающих в
+                        домашних условиях</a>
+                </h3>
+                <div class="article-meta">
+                    <span class="data">10 июня 2019</span>
+                    <span class="author">Неизвестный автор</span>
+                </div>
+                <p class="text">Расскажем, какие упражнения выбрать и как сделать коврик
+                     для занятий йогой из того, что можно найти в шкафу.</p>
+            </article>
+
+            <article class="article">  <!-- 3-->
+                <img src="images/last-post3.jpg" alt="описание" class="article-image">
+                <ul class="cathegory-list">
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Music</a>
+                    </li>
+                </ul>
+                <h3 class="article-title">
+                    <a href="#" class="link">Лучшие музыкальные фестивали
+                        этого лета</a>
+                </h3>
+                <div class="article-meta">
+                    <span class="data">10 июня 2019</span>
+                    <span class="author">Неизвестный автор</span>
+                </div>
+                <p class="text">Лето на носу, а с ним и музыкальные фестивали. 
+                    На каком же из них вы разобьёте свою палатку?</p>
+                     <p class="text">Мы составили список лучших летних фестивалей по всему миру.</p>
+            </article>
+
+            <article class="article">  <!-- 4-->
+                <img src="images/last-post4.jpg" alt="описание" class="article-image">
+                <ul class="cathegory-list">
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Lifestyle</a>
+                    </li>
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Food</a>
+                    </li>
+                </ul>
+                <h3 class="article-title">
+                    <a href="#" class="link">Наукоёмкий подход к кулинарии</a>
+                </h3>
+                <div class="article-meta">
+                    <span class="data">10 июня 2019</span>
+                    <span class="author">Неизвестный автор</span>
+                </div>
+                <p class="text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, 
+                    вскроем физику, химию и микробиологию еды.</p>
+            </article>
+
+            <article class="article">  <!-- 5  из 5 -->
+                <img src="images/last-post5.jpg" alt="описание" class="article-image">
+                <ul class="cathegory-list">
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Lifestyle</a>
+                    </li>
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Interior</a>
+                    </li>
+                    <li class="cathegory-item">
+                        <a href="#" class="link cathegory-link">Art</a>
+                    </li>
+                </ul>
+                <h3 class="article-title">
+                    <a href="#" class="link">Делаем модные принты на 
+                        подушках для интерьера </a>
+                </h3>
+                <div class="article-meta">
+                    <span class="data">10 июня 2019</span>
+                    <span class="author">Неизвестный автор</span>
+                </div>
+                <p class="text">Подушки для дивана целесообразнее заказать 
+                    в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, 
+                    чем везти подушку в химчистку.</p>
+            </article>
+
+        </section>  <!--   Секция Новые посты------------------------->
         <section class="newposts">
             <div></div> <!--5 постов-->
         </section>
-        <section class="search">
+
+        <section class="search"> <!--Секция -------------------------->
             <!--форма-->
         </section>
-        <section class="mail">
+
+        <section class="mail">  <!--Секция Подписка-------------------->
             <div></div> <!--форма-->
             <div></div><!--кнопка-->
         </section>
-        <section class="tags">
+
+        <section class="tags">  <!--  Секция ТЕГИ ------------->
             <div></div>
         </section>
-        <section class="themes">
+
+        <section class="themes">  <!--  Секция Темы ------------------>
             <!--список-->
         </section>
-        <section class="goods">
+
+        <section class="goods"> <!-- Секция ТОВАРЫ --------------------->
             <div></div> <!--3 статьи-->
         </section>
     </main>
-    <footer>
+
+    <footer> <!-- Footer --------------------------------------------------------------------------------->
         <div class="social"></div>
         <div class="copyraght"></div>
     </footer>
+
 </body>
 </html>

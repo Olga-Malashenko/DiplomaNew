@@ -27,7 +27,7 @@
 
 body {
     font-family: OpenSans, sans-serif;
-    color: #eff6f1;
+    background-color: #eff6f1;
 }
 
 /*     Header   --------------------------------------------------------------------------------*/
@@ -92,16 +92,15 @@ body {
 
 /*   trends    */
 
+
 .trends-title {
     font-size: 16px;
     color: #0f0d0e;
     font-weight: 700;
-    
     text-align: center;
     text-transform: uppercase;
     margin-top: 36px;
     margin-bottom: 24px;
-    
 }
 
 .trends-title::after {
@@ -125,8 +124,7 @@ body {
     background-position: center center;
     background-size: cover;
     position: relative;
-    /* padding-top: 90px;
-    padding-left: 15px; */
+   
     margin-bottom: 3px;
     display: flex;
     align-items: flex-end;
@@ -160,9 +158,9 @@ body {
 }
 
 .trend-banner-box {
-    width: 330px;
-    padding-right: 15px;
-    padding-left: 15px;
+    width: 100%; /*  Поменять потом на относительные величины и max-width*/
+    padding: 12px 15px 18px;
+    
     margin-right: 15px;
     margin-left: 15px;
     /* height: 110px; /* по макету 127, но пропорции не те ?? 
@@ -170,26 +168,26 @@ body {
     border: 3px solid #b59f5b;
     position: relative;
     z-index: 10;
-    padding-top: 12px;
-    padding-bottom: 18px;
+    
     margin-bottom: 12px;
 }
 
-.trend-banner-cathegory {
+.cathegory-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.cathegory-item {
     font-size: 14px;
     line-height: 37px;
     color: #b59f5b;
     font-weight: 700;
     text-transform: uppercase; /* сделать отдельный класс и один раз прописать ?  */
-    padding-right: 15px;
+    margin-right: 15px;
 }
 
-.first-cathegory {  /* заменить на псевдокласс?? */
-    padding-right: 0;
-}
-
-.trend-banner-cathegory:hover {
-
+.cathegory-link:hover {
+    text-decoration: underline;
 }
 
 .link {
@@ -207,6 +205,89 @@ body {
     
 }
 
-/* a:hover {
-    text-decoration: underline;
-  }  --  временно написала, просто чтобы вспомнить */
+.trend-banner-title-link:hover {
+    color: #b59f5b;
+}
+
+/* Articles -------------------------------------------------------*/
+
+.articles {
+    margin: 10px 15px 10px; /*  верхний проверить на схлопывание
+     Нижний сейчас вообще наобум, померить его после*/
+}
+
+/*.article {  ------ Попытка сверстать с помощью стилей, но кода получается намного больше
+    position: relative;
+}
+
+.article::after {
+    content: "";
+    position: absolute;
+    height: 254px;
+    background-color: #eff6f1;
+    margin-top: 44px;
+    background-image: url(../images/last-post1.jpg);
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} */
+
+.article-image {
+    display: block;
+    height: 254px;
+    background-color: #eff6f1; /* не работает...*/
+    margin-top: 38px;
+}
+
+.article-title {
+    font-size: 16px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.article-title:hover {
+    color: #b59f5b;
+}
+
+.data {   /*   Посмотреть, может, объединить у них часть стилей в общее правило*/
+    font-size: 12px;
+line-height: 40px;
+color: #888888;
+font-weight: 400;
+margin-right: 6px;
+margin-bottom: 8px;
+}
+
+.author {
+    font-size: 12px;
+line-height: 40px;
+color: #000000;
+font-weight: 700;
+margin-bottom: 8px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #0f0d0e;
+    font-weight: 400;
+   /* margin-top: 8px; */
+    margin-bottom: 10px;
+}
+
+.article::after {
+    content: "";
+    /* position: absolute; */
+    width: 329px;
+height: 3px;
+background-color: #cac7bb;
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
