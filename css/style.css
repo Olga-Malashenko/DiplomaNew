@@ -27,12 +27,12 @@
 
 body {
     font-family: OpenSans, sans-serif;
-    background-color: #eff6f1;
+    
 }
 
 /*     Header   --------------------------------------------------------------------------------*/
 
-
+/* 
 .header {
     width: 100vw;
     height: 100vh;
@@ -85,27 +85,29 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 225px;
-    /* margin-bottom: 52px; */
 }
 
-/*-------     Main    -------------------------------------------------------------------------------- */
+/*-------     Main    -------------------------------------------------------------------------------- 
 
-/*   trends    */
+/*   trends    
 
 
-.trends-title {
+.section-title {
     font-size: 16px;
     color: #0f0d0e;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 36px;
     margin-bottom: 24px;
 }
 
-.trends-title::after {
+.trends-title {
+    margin-top: 40px;
+}
+
+.section-title::after {
     content: "";
-    /* position: absolute; */
+    /* position: absolute; 
     width: 66px;
     height: 3px;
     background-color: #b59f5b;
@@ -158,13 +160,11 @@ body {
 }
 
 .trend-banner-box {
-    width: 100%; /*  Поменять потом на относительные величины и max-width*/
+    width: 100%; /*  Поменять потом на относительные величины и max-width
     padding: 12px 15px 18px;
     
     margin-right: 15px;
     margin-left: 15px;
-    /* height: 110px; /* по макету 127, но пропорции не те ?? 
-    Уйти от жесткой высоты на флексы!! Прижать книзу */
     border: 3px solid #b59f5b;
     position: relative;
     z-index: 10;
@@ -182,7 +182,7 @@ body {
     line-height: 37px;
     color: #b59f5b;
     font-weight: 700;
-    text-transform: uppercase; /* сделать отдельный класс и один раз прописать ?  */
+    text-transform: uppercase; /* сделать отдельный класс и один раз прописать ?  
     margin-right: 15px;
 }
 
@@ -207,14 +207,14 @@ body {
 
 .trend-banner-title-link:hover {
     color: #b59f5b;
-}
+} */
 
 /* Articles -------------------------------------------------------*/
 
-.articles {
-    margin: 10px 15px 10px; /*  верхний проверить на схлопывание
-     Нижний сейчас вообще наобум, померить его после*/
-}
+/* .section {
+    margin: 40px 15px 10px;
+    
+} */
 
 /*.article {  ------ Попытка сверстать с помощью стилей, но кода получается намного больше
     position: relative;
@@ -233,11 +233,11 @@ body {
     bottom: 0;
     left: 0;
 } */
-
+/* 
 .article-image {
     display: block;
     height: 254px;
-    background-color: #eff6f1; /* не работает...*/
+    background-color: #eff6f1; /* не работает... понять, почему
     margin-top: 38px;
 }
 
@@ -250,11 +250,13 @@ body {
     margin-bottom: 6px;
 }
 
-.article-title:hover {
+.article-title:hover {  /*  Возможно, логичнее перенести 
+    это свойство на саму ссылку, дав ей доп. класс
     color: #b59f5b;
 }
 
-.data {   /*   Посмотреть, может, объединить у них часть стилей в общее правило*/
+.data {   /*   Посмотреть, может, объединить у них с автором 
+     часть стилей в общее правило
     font-size: 12px;
 line-height: 40px;
 color: #888888;
@@ -276,18 +278,113 @@ margin-bottom: 8px;
     line-height: 20px;
     color: #0f0d0e;
     font-weight: 400;
-   /* margin-top: 8px; */
     margin-bottom: 10px;
 }
 
 .article::after {
     content: "";
-    /* position: absolute; */
-    width: 329px;
-height: 3px;
-background-color: #cac7bb;
-display: block;
+    /* position: absolute; 
+     width: 320px;
+    height: 3px; 
+    /* background-color: #cac7bb; 
+    background-color: #f4f7f6;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
+
+/*  Секция Новые посты
+
+
+
+.newpost {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newpost-image {
+    width: 70px;
+height: 70px;
+background-color: #f4f7f6;
+margin-right: 15px;
+}
+
+.newpost-data {
+    font-size: 12px;
+color: #000000;
+font-weight: 400;
+margin-bottom: 4px;
+display: block;
+}
+
+.newpost-title {
+    font-size: 14px;
+color: #000000;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.newpost-title:hover {
+        color: #b59f5b;
+} */
+
+/*   Секция ПОИСК  */
+
+/* 
+
+.search-form {
+    /* -webkit-appearance: none;
+    -moz-appearance: none; 
+
+    display: flex;
+}
+
+.search-field {
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    
+    width: 282px;
+    height: 48px;
+    background-color: #f4f7f6;
+    /*background-color: #eff6f1;
+    /* background-color: #cac7bb;
+     /*Взяла свой, как и 
+    для черты, тот же свой  
+    font-size: 13px;
+    line-height: 40px;
+    color: #000000;
+  
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-style: none;
+    font-family: OpenSans, sans-serif;
+    
+  }
+
+  .search-field:focus {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #b59f5b;
+  }
+
+  .search-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 48px;
+    height: 48px;
+    background-color: #b59f5b;
+    background-image: url(../svg/search.svg);
+    border-style: none;
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  box-sizing: border-box;
+  }
+
+  .search-btn:focus {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #323232;
+  } */
+  
