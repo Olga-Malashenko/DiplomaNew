@@ -32,7 +32,7 @@ body {
 
 /*     Header   --------------------------------------------------------------------------------*/
 
-/* 
+
 .header {
     width: 100vw;
     height: 100vh;
@@ -85,11 +85,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 225px;
-}
+} 
 
 /*-------     Main    -------------------------------------------------------------------------------- 
 
-/*   trends    
+/*  trends    */
 
 
 .section-title {
@@ -107,7 +107,7 @@ body {
 
 .section-title::after {
     content: "";
-    /* position: absolute; 
+    /* position: absolute; */
     width: 66px;
     height: 3px;
     background-color: #b59f5b;
@@ -160,7 +160,8 @@ body {
 }
 
 .trend-banner-box {
-    width: 100%; /*  Поменять потом на относительные величины и max-width
+    width: 100%; /*  Поменять потом 
+    на относительные величины и max-width */
     padding: 12px 15px 18px;
     
     margin-right: 15px;
@@ -182,7 +183,8 @@ body {
     line-height: 37px;
     color: #b59f5b;
     font-weight: 700;
-    text-transform: uppercase; /* сделать отдельный класс и один раз прописать ?  
+    text-transform: uppercase; /* сделать 
+    отдельный класс и один раз прописать ?  */
     margin-right: 15px;
 }
 
@@ -207,16 +209,17 @@ body {
 
 .trend-banner-title-link:hover {
     color: #b59f5b;
-} */
+}
 
 /* Articles -------------------------------------------------------*/
 
-/* .section {
+ .section {
     margin: 40px 15px 10px;
     
-} */
-
-/*.article {  ------ Попытка сверстать с помощью стилей, но кода получается намного больше
+} 
+/*
+.article {  /*------ Попытка сверстать 
+    с помощью стилей, но кода получается намного больше 
     position: relative;
 }
 
@@ -233,11 +236,11 @@ body {
     bottom: 0;
     left: 0;
 } */
-/* 
+
 .article-image {
     display: block;
     height: 254px;
-    background-color: #eff6f1; /* не работает... понять, почему
+    background-color: #eff6f1;
     margin-top: 38px;
 }
 
@@ -251,12 +254,12 @@ body {
 }
 
 .article-title:hover {  /*  Возможно, логичнее перенести 
-    это свойство на саму ссылку, дав ей доп. класс
+    это свойство на саму ссылку, дав ей доп. класс */
     color: #b59f5b;
 }
 
-.data {   /*   Посмотреть, может, объединить у них с автором 
-     часть стилей в общее правило
+.data {   /*   Посмотреть, может, объединить у них 
+    с автором  часть стилей в общее правило */
     font-size: 12px;
 line-height: 40px;
 color: #888888;
@@ -283,18 +286,19 @@ margin-bottom: 8px;
 
 .article::after {
     content: "";
-    /* position: absolute; 
-     width: 320px;
+    /* position: absolute; ?? */
+    width: 330px;
     height: 3px; 
-    /* background-color: #cac7bb; 
+
     background-color: #f4f7f6;
+    
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
 
-/*  Секция Новые посты
+/*  Секция Новые посты  */
 
 
 
@@ -327,15 +331,15 @@ text-transform: uppercase;
 
 .newpost-title:hover {
         color: #b59f5b;
-} */
+} 
 
 /*   Секция ПОИСК  */
 
-/* 
+
 
 .search-form {
     /* -webkit-appearance: none;
-    -moz-appearance: none; 
+    -moz-appearance: none; */
 
     display: flex;
 }
@@ -350,7 +354,7 @@ text-transform: uppercase;
     /*background-color: #eff6f1;
     /* background-color: #cac7bb;
      /*Взяла свой, как и 
-    для черты, тот же свой  
+    для черты, тот же свой  */
     font-size: 13px;
     line-height: 40px;
     color: #000000;
@@ -385,6 +389,5 @@ text-transform: uppercase;
   .search-btn:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-color: #323232;
-  } */
-  
+    background-color: #323232; 
+  } 
