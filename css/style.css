@@ -65,6 +65,57 @@ body {
     z-index: 10;
 }
 
+.hamburger-menu {
+    padding-top: 32px;
+    /* height: 19px;
+    width: 23px; */
+    padding-left: 307px;
+}
+
+.hamburger-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: none;
+}
+
+.hamburger-line {
+    
+    width: 23px;
+    height: 3px;
+    background-color: #fff;
+   /* position: relative; */
+}
+
+.hamburger-btn::before {
+    content: "";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 23px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.hamburger-btn::after {
+    content: "";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 23px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.logo {
+    display: block;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 174px;
+} 
+
 .main-title {
     display: inline-block;
     max-width: 328px;
@@ -79,13 +130,7 @@ body {
     margin-top: 30px;
 }
 
-.logo {
-    display: block;
-    width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 225px;
-} 
+
 
 /*-------     Main    -------------------------------------------------------------------------------- 
 
@@ -521,7 +566,7 @@ margin-left: 20px;
 }
 
 .goods-box {
-    padding: 12px 25px 36px 20px;
+    padding: 12px 25px 24px 20px;
     position: relative;
 }
 
@@ -605,4 +650,63 @@ font-family: "Open Sans", sans-serif;
   text-transform: uppercase;  
 box-sizing: border-box;
     border-style: none;
+}
+
+.social {
+    width: 330px;
+height: 82px;
+background-color: #f4f7f6;
+margin-left: 15px;
+margin-top: 43px;
+
+
+}
+
+.social-list {
+    display: flex;
+    padding: 30px 58px;
+    justify-content: space-between;
+}
+
+.social-link {
+    display: block;
+    width: 22px;
+    height: 22px;
+    color: #000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.twitter {
+    background-image: url(../svg/004-twitter.svg);
+}
+
+.pinterest {
+    background-image: url(../svg/001-pinterest.svg);
+}
+
+.facebook {
+    background-image: url(../svg/002-facebook-logo.svg);
+}
+
+.instagram {
+    background-image: url(../svg/005-instagram.svg);
+}
+
+.tumblr {
+    background-image: url(../svg/003-tumblr.svg);
+}
+
+.copyright {
+    height: 110px;
+    padding-top: 43px;
+text-align: center;
+}
+
+.copyright-text {
+    font-size: 12px;
+color: #999999;
+font-weight: 700;
+
 }
