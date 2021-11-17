@@ -67,8 +67,7 @@ body {
 
 .hamburger-menu {
     padding-top: 32px;
-    /* height: 19px;
-    width: 23px; */
+    
     padding-left: 307px;
 }
 
@@ -76,13 +75,16 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     border-style: none;
+    background-color: transparent;
+    
 }
 
-.hamburger-line {
-    
+.ham-line {
+    display: block; 
     width: 23px;
     height: 3px;
     background-color: #fff;
+
    /* position: relative; */
 }
 
