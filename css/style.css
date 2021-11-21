@@ -27,14 +27,12 @@
 
 body {
     font-family: OpenSans, sans-serif;
-    
 }
 
 /*     Header   --------------------------------------------------------------------------------*/
 
-
 .header {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #1b2c33;
     background-image: url(../images/banner-mobile.jpg);
@@ -47,7 +45,7 @@ body {
 .header::after {
     content: "";
     position: absolute;
-    background-color: #000000;
+    background-color: #000;
     opacity: 0.6;
     top: 0;
     right: 0;
@@ -55,10 +53,7 @@ body {
     left: 0;
 }
 
-
-
 .wellcome-container {
-    /* width: 330px; */
     margin-right: 15px;
     margin-left: 15px;
     position: relative;
@@ -67,8 +62,7 @@ body {
 
 .hamburger-menu {
     padding-top: 32px;
-    
-    padding-left: 307px;
+    padding-left: calc(100% - 23px);
 }
 
 .hamburger-btn {
@@ -76,16 +70,6 @@ body {
     -moz-appearance: none;
     border-style: none;
     background-color: transparent;
-    
-}
-
-.hamburger-line {
-    display: block; 
-    width: 23px;
-    height: 3px;
-    background-color: #fff;
-
-   /* position: relative; */
 }
 
 .hamburger-btn::before {
@@ -110,34 +94,38 @@ body {
     margin-top: 5px;
 }
 
+.hamburger-line {
+    display: block;
+    width: 23px;
+    height: 3px;
+    background-color: #fff;
+}
+
 .logo {
     display: block;
-    width: 270px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 174px;
-} 
+    margin-top: 27vh;
+}
 
 .main-title {
-    display: inline-block;
-    max-width: 328px;
-    max-height: 384px;
-    font-size: 26px;
+    display: block;
+    width: 90%;
+    font-size: 3.6vh;
     line-height: 36px;
     color: #ffffff;
     font-weight: 700;
-    
     text-align: center;
     text-transform: uppercase;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 
 /*-------     Main    -------------------------------------------------------------------------------- 
 
 /*  trends    */
-
 
 .section-title {
     font-size: 16px;
@@ -148,13 +136,8 @@ body {
     margin-bottom: 28px;
 }
 
-.trends-title {
-    margin-top: 40px;
-}
-
 .section-title::after {
     content: "";
-    /* position: absolute; */
     width: 66px;
     height: 3px;
     background-color: #b59f5b;
@@ -164,17 +147,20 @@ body {
     margin-top: 8px;
 }
 
+.trends-title {
+    margin-top: 40px;
+}
+
 .trend-banner {
     width: 100vw;
     height: 232px;
+    height: 65vw;
     background-color: #f4f7f6;
-    
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
-   
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     display: flex;
     align-items: flex-end;
 }
@@ -207,23 +193,18 @@ body {
 }
 
 .trend-banner-box {
-    width: 100%; /*  Поменять потом 
-    на относительные величины и max-width */
+    width: 100%;
     padding: 12px 15px 18px;
-    
     margin-right: 15px;
     margin-left: 15px;
     border: 3px solid #b59f5b;
     position: relative;
     z-index: 10;
-    
     margin-bottom: 12px;
 }
 
-
 .cathegory-list {
     display: flex;
-   
 }
 
 .list {
@@ -235,13 +216,8 @@ body {
     line-height: 37px;
     color: #b59f5b;
     font-weight: 700;
-    text-transform: uppercase; /* сделать 
-    отдельный класс и один раз прописать ?  */
+    text-transform: uppercase;
     margin-right: 15px;
-}
-
-.cathegory-link:hover {
-    text-decoration: underline;
 }
 
 .link {
@@ -249,14 +225,17 @@ body {
     color: inherit;
 }
 
+.cathegory-link:hover {
+    text-decoration: underline;
+}
+
 .trend-banner-title {
     font-size: 16px;
     line-height: 20px;
     color: #f4f7f6;
     font-weight: 700;
-    text-decoration: no-un;
+    text-decoration: none;
     text-transform: uppercase;
-    
 }
 
 .trend-banner-title-link:hover {
@@ -265,35 +244,27 @@ body {
 
 /* Articles -------------------------------------------------------*/
 
- .section {
+.section {
     margin: 40px 15px 12px;
-    
-} 
-/*
-.article {  /*------ Попытка сверстать 
-    с помощью стилей, но кода получается намного больше 
-    position: relative;
 }
 
 .article::after {
     content: "";
-    position: absolute;
-    height: 254px;
-    background-color: #eff6f1;
-    margin-top: 44px;
-    background-image: url(../images/last-post1.jpg);
-    background-repeat: no-repeat;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-} */
+    width: 100%;
+    height: 3px;
+    background-color: #f4f7f6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
 
 .article-image {
     display: block;
-    height: 254px;
+    width: 100%;
     background-color: #f4f7f6;
     margin-top: 38px;
+
 }
 
 .article-title {
@@ -305,27 +276,25 @@ body {
     margin-bottom: 6px;
 }
 
-.article-title:hover {  /*  Возможно, логичнее перенести 
-    это свойство на саму ссылку, дав ей доп. класс */
+.article-title:hover {
     color: #b59f5b;
 }
 
-.data {   /*   Посмотреть, может, объединить у них 
-    с автором  часть стилей в общее правило */
+.article-meta {
     font-size: 12px;
-line-height: 40px;
-color: #888888;
-font-weight: 400;
-margin-right: 6px;
-margin-bottom: 8px;
+    line-height: 40px;
+    margin-bottom: 8px;
+}
+
+.data {
+    color: #888888;
+    font-weight: 400;
+    margin-right: 6px;
 }
 
 .author {
-    font-size: 12px;
-line-height: 40px;
-color: #000000;
-font-weight: 700;
-margin-bottom: 8px;
+    color: #000000;
+    font-weight: 700;
 }
 
 .text {
@@ -336,23 +305,9 @@ margin-bottom: 8px;
     margin-bottom: 10px;
 }
 
-.article::after {
-    content: "";
-    /* position: absolute; ?? */
-    width: 330px;
-    height: 3px; 
-
-    background-color: #f4f7f6;
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-/*  Секция Новые посты  */
 
 
+/*  Newposts  */
 
 .newpost {
     display: flex;
@@ -361,210 +316,180 @@ margin-bottom: 8px;
 
 .newpost-image {
     width: 70px;
-height: 70px;
-background-color: #f4f7f6;
-margin-right: 15px;
+    height: 70px;
+    background-color: #f4f7f6;
+    margin-right: 15px;
 }
 
 .newpost-data {
     font-size: 12px;
-color: #000000;
-font-weight: 400;
-margin-bottom: 4px;
-display: block;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 4px;
+    display: block;
 }
 
 .newpost-title {
     font-size: 14px;
-color: #000000;
-font-weight: 700;
-text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .newpost-title:hover {
-        color: #b59f5b;
-} 
+    color: #b59f5b;
+}
 
-/*   Секция ПОИСК  */
-
-
+/*   Search  */
 
 .search-form {
-    /* -webkit-appearance: none;
-    -moz-appearance: none; */
-
     display: flex;
 }
 
 .search-field {
+    width: calc(100% - 48px);
+
+}
+
+.field {
     -webkit-appearance: none;
-    -moz-appearance: none; 
-    
-    width: 282px;
+    -moz-appearance: none;
     height: 48px;
     background-color: #f4f7f6;
-    /*background-color: #eff6f1;
-    /* background-color: #cac7bb;
-     /*Взяла свой, как и 
-    для черты, тот же свой  */
     font-size: 13px;
     line-height: 40px;
     color: #000000;
-  
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
     padding-left: 20px;
     box-sizing: border-box;
     border-style: none;
-    font-family: OpenSans, sans-serif;
-    
-  }
+}
 
-  .search-field:focus {
+.field:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
     border: 1px solid #b59f5b;
-  }
+}
 
-  .search-btn {
+.button {
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 48px;
     height: 48px;
     background-color: #b59f5b;
-    background-image: url(../svg/search.svg);
-    border-style: none;
-    background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 20px;
-  box-sizing: border-box;
-  }
-
-  .search-btn:hover {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #323232; 
-  }
-
-
-  .email-field {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
-    width: 330px;
-    height: 48px;
-    background-color: #f4f7f6;
-
-    font-size: 13px;
-line-height: 40px;
-color: #000000;
-font-weight: 400;
-font-family: "Open Sans", sans-serif;
-padding-left: 20px;
     box-sizing: border-box;
     border-style: none;
+    font-size: 14px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+}
 
-    margin-bottom: 18px;
-  }
-
-  .email-field:focus {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: 1px solid #b59f5b;
-  }
-
-  .email-btn {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
-    width: 330px;
-height: 48px;
-background-color: #b59f5b;
-
-font-size: 14px;
-line-height: 40px;
-color: #ffffff;
-font-weight: 700;
-font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;  
-box-sizing: border-box;
-    border-style: none;
-  }
-
-  .email-btn:hover {
+.button:hover {
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: #323232;
-  }
+}
+
+.search-btn {
+    width: 48px;
+    background-image: url(../svg/search.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+
+/*   Subscribe   */
 
 
+
+.email-field {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.email-field:focus {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #b59f5b;
+}
+
+
+
+/*  Tags    */
 
 .tags-list {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .tag-item {
     font-size: 12px;
-
-color: #0f0d0e;
-font-weight: 700;
-text-align: center;
-
-text-transform: uppercase;
-padding-left: 12px;
-padding-right: 12px;
-padding-top: 4px;
-
-height: 30px;
-display: block;
-background-color: #fff;
-border: 3px solid #f4f7f6;
-
-margin-bottom: 6px;
-margin-right: 6px;
+    color: #0f0d0e;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    height: 30px;
+    display: block;
+    background-color: #fff;
+    border: 3px solid #f4f7f6;
+    margin-bottom: 6px;
+    margin-right: 6px;
 }
 
 .tag-item:hover {
     border: 3px solid #b59f5b;
 }
 
+/*  Themes   */
+
 .themes-item {
     font-size: 14px;
-/* line-height: 47px; */
-color: #000000;
-font-weight: 700;
+    color: #000000;
+    font-weight: 700;
     margin-top: 12px;
-    
 }
 
 .themes-item::after {
     content: "";
     display: block;
-    width: 330px;
-height: 1px;
-background-color: #eeeeee;
-margin-top: 12px;
+    width: 100%;
+    height: 1px;
+    background-color: #eeeeee;
+    margin-top: 12px;
 }
 
 .number {
     font-size: 12px;
-
-color: #b59f5b;
-font-weight: 700;
-margin-left: 2px;
-vertical-align: text-top;
+    color: #b59f5b;
+    font-weight: 700;
+    margin-left: 2px;
+    vertical-align: text-top;
 }
 
+/*  Goods   */
+
 .goods-card {
-    margin-bottom: 30px; /* М\б убрать 
-    его у последней карточки?*/
+    margin-bottom: 30px;
+}
+
+.goods-card:last-child {
+    margin-bottom: 0;
 }
 
 .goods-image {
     width: 285px;
-height: 285px;
-background-color: #f4f7f6;
-margin-left: 20px;
+    height: 285px;
+    display: block;
+    background-color: #f4f7f6;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .goods-box {
@@ -576,9 +501,7 @@ margin-left: 20px;
     content: "";
     position: absolute;
     display: block;
-    width: 330px;
-    /* height: 220px; */
-   
+    width: 100%;
     border: 3px solid #b59f5b;
     top: -38px;
     left: -3px;
@@ -586,20 +509,20 @@ margin-left: 20px;
 }
 
 .goods-title {
-        font-size: 17px;
+    font-size: 17px;
     line-height: 22px;
     color: #0f0d0e;
     font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 4px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
 }
 
 .goods-text {
     font-size: 15px;
-line-height: 22px;
-color: #0f0d0e;
-font-weight: 400;
-margin-bottom: 22px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 400;
+    margin-bottom: 22px;
 }
 
 .goods-link {
@@ -607,66 +530,49 @@ margin-bottom: 22px;
 }
 
 .goods-link:hover {
-    /* -webkit-appearance: none;
-    -moz-appearance: none; */
     text-decoration: underline;
 }
 
-.goods-order-box {
+.goods-order-container {
     display: flex;
     justify-content: space-between;
 }
 
-
 .price-before {
     display: block;
     font-size: 14px;
-line-height: 24px;
-text-decoration: line-through;
-color: #0f0d0e;
-font-weight: 700;
+    line-height: 24px;
+    text-decoration: line-through;
+    color: #0f0d0e;
+    font-weight: 700;
 }
 
 .new-price {
     display: block;
     font-size: 20px;
-line-height: 24px;
-color: #0f0d0e;
-font-weight: 700;
+    line-height: 24px;
+    color: #0f0d0e;
+    font-weight: 700;
 }
 
 .goods-order-btn {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 140px; /* единств.отл.,
-     объединить правила*/
-height: 48px;
-background-color: #b59f5b;
-    
-
-font-size: 14px;
-line-height: 40px;
-color: #ffffff;
-font-weight: 700;
-font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;  
-box-sizing: border-box;
-    border-style: none;
+    width: 140px;
 }
 
+/*  ---- Footer -----------------------------------------*/
+
 .social {
-    width: 330px;
-height: 82px;
-background-color: #f4f7f6;
-margin-left: 15px;
-margin-top: 43px;
-
-
+    height: 82px;
+    background-color: #f4f7f6;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 43px;
 }
 
 .social-list {
     display: flex;
     padding: 30px 58px;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -703,12 +609,11 @@ margin-top: 43px;
 .copyright {
     height: 110px;
     padding-top: 43px;
-text-align: center;
+    text-align: center;
 }
 
 .copyright-text {
     font-size: 12px;
-color: #999999;
-font-weight: 700;
-
+    color: #999999;
+    font-weight: 700;
 }
